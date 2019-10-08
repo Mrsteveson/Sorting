@@ -13,16 +13,22 @@ def merge( arrA, arrB ):
         else:
             merged_arr[z] = arrB[x]
             x += 1
-        k += 1
+        z += 1
+
     # Check first array
     while i < len(arrA):
+        merged_arr[z] = arrA[i]
+        i += 1
+        z += 1
 
     # Check second array
     while x < len(arrB):
-
+        merged_arr[z] = arrB[x]
+        x += 1
+        z += 1
 
     return merged_arr
-
+ 
 
 # TO-DO: implement the Merge Sort function below USING RECURSION
 def merge_sort( arr ):
